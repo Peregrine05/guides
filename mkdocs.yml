@@ -1,0 +1,18 @@
+site_name: Guides
+site_url: https://peregrine05.github.io/guides/
+docs_dir: guides
+nav:
+    - "Index": "index.md"
+    - "Chunky":
+        - "Index": "chunky/index.md"
+        - "Chunky Basics": "chunky/basics.md"
+        - "Rendering a Minecraft Title Screen Panorama": "chunky/title_panorama.md"
+
+theme:
+    name: terminal
+    features:
+        - navigation.side.indexes
+
+markdown_extensions:
+    - toc:
+        permalink: "#"
