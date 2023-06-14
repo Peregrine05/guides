@@ -19,4 +19,5 @@ jobs:
       - name: Build and Deploy
         run: |
           source ./venv/bin/activate
+          cd src
           python -m mkdocs gh-deploy --force
