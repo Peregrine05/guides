@@ -1,5 +1,4 @@
 # Index
 
 - Index
-
-- [Chunky](chunky)
+- [chunky/index](chunky/index.md)

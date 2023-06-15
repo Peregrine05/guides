@@ -20,21 +20,21 @@ Press `Start` and render the scene to the target SPP. Rename the saved snapshot 
 
 Repeat Steps 2 and 3 for the other Skybox presets, renaming each new snapshot after each render finishes according to the mapping below.
 
-`Skybox Front (North)` -> "panorama_0.png"
+- `Skybox Front (North)` -> "panorama_0.png"
 
-`Skybox Right` -> "panorama_1.png"
+- `Skybox Right` -> "panorama_1.png"
 
-`Skybox Back` -> "panorama_2.png"
+- `Skybox Back` -> "panorama_2.png"
 
-`Skybox Left` -> "panorama_3.png"
+- `Skybox Left` -> "panorama_3.png"
 
-`Skybox Up` -> "panorama_4.png"
+- `Skybox Up` -> "panorama_4.png"
 
-`Skybox Down` -> "panorama_5.png"
+- `Skybox Down` -> "panorama_5.png"
 
 ## Step 4: Create a resource pack
 
-Create a new directory somewhere on your computer. Inside, create a file called "pack.mcmeta". Write the following text to the file, editing the description as you desire. See [this Minecraft Wiki page](https://minecraft.fandom.com/wiki/Pack_format) for a list of pack formats. Write the appropriate pack format for the version of Minecraft on which you wish to use the pack.
+Create a new directory somewhere on your computer. Inside, create a file called "pack.mcmeta". Write the following text to the file, editing the description as you desire. See <a href="https://minecraft.fandom.com/wiki/Pack_format" target="_blank">this Minecraft Wiki page</a> for a list of pack formats. Write the appropriate pack format for the version of Minecraft on which you wish to use the pack.
 
 ```json
 {
@@ -55,4 +55,4 @@ Move the ZIP archive to the "resourcepacks" directory of your ".minecraft" direc
 
 ---
 
-I highly recommend installing the [Panorama Tweaker](https://modrinth.com/mod/panorama-tweaker) mod for Fabric. By default, the panorama view is aimed slightly downward, preventing some of the panorama from being seen. This mod allows for extensive customization of the panorama view.
+I highly recommend installing the <a href="https://modrinth.com/mod/panorama-tweaker" target=_blank">Panorama Tweaker</a> mod for Fabric. By default, the panorama view is aimed slightly downward, preventing some of the panorama from being seen. This mod allows for extensive customization of the panorama view.
