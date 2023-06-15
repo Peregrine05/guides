@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.4.3, mkdocs-terminal-4.4.0">
+     
+     
+    
+    <link rel="canonical" href="https://peregrine05.github.io/guides/chunky/title_panorama/"><link rel="icon" type="image/png" sizes="192x192" href="../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Rendering a Minecraft Title Screen Panorama - Guides</title>
+
+
+<link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../css/normalize.css" rel="stylesheet">
+<link href="../../css/terminal.css" rel="stylesheet">
+<link href="../../css/theme.css" rel="stylesheet">
+<link href="../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../..",
+    shortcuts = "{}";
+</script>
+<script src="../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="https://peregrine05.github.io/guides/" class="no-style">Guides</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../.." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Index</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="1">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../.."></a>
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../">Chunky</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../basics/">Chunky Basics</a>
+        
+    
+    </li>
+            
+        
+            
+            
+                
+                
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">Rendering a Minecraft Title Screen Panorama</span>
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#rendering-a-minecraft-title-screen-panorama-in-chunky">Rendering a Minecraft title screen panorama in Chunky</a></li>
+        <li><a href="#step-1-set-the-canvas-size">Step 1: Set the canvas size</a></li><li><a href="#step-2-set-up-the-camera">Step 2: Set up the camera</a></li><li><a href="#step-3-render">Step 3: Render</a></li><li><a href="#step-4-create-a-resource-pack">Step 4: Create a resource pack</a></li><li><a href="#step-5-use-the-resource-pack">Step 5: Use the resource pack</a></li>
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h1 id="rendering-a-minecraft-title-screen-panorama-in-chunky">Rendering a Minecraft title screen panorama in Chunky<a class="headerlink" href="#rendering-a-minecraft-title-screen-panorama-in-chunky" title="Permanent link">#</a></h1>
+<p>This guide assumes that you already know how to set up and render a scene in Chunky.</p>
+<hr />
+<p>The panorama that Minecraft displays on the title screen is in cubemap format, in which six separate images form the six faces of a virtual cube that covers the sky. The panorama can be changed through the use of a resource pack.</p>
+<h2 id="step-1-set-the-canvas-size">Step 1: Set the canvas size<a class="headerlink" href="#step-1-set-the-canvas-size" title="Permanent link">#</a></h2>
+<p>The canvas size must have an aspect ratio of <em>1:1</em>. Open the <code>Scene</code> tab and set the <code>Canvas size</code> to a resolution that gives the canvas an aspect ratio of <em>1:1</em>, such as <em>512x512</em>, or <em>1024x1024</em>.</p>
+<h2 id="step-2-set-up-the-camera">Step 2: Set up the camera<a class="headerlink" href="#step-2-set-up-the-camera" title="Permanent link">#</a></h2>
+<p>Open the <code>Camera</code> tab. Click <code>Load preset</code>, and then click <code>Skybox Front (North)</code>.</p>
+<h2 id="step-3-render">Step 3: Render<a class="headerlink" href="#step-3-render" title="Permanent link">#</a></h2>
+<p>Press <code>Start</code> and render the scene to the target SPP. Rename the saved snapshot to "panorama_0.png" to prevent it from being overwritten.</p>
+<p>Repeat Steps 2 and 3 for the other Skybox presets, renaming each new snapshot after each render finishes according to the mapping below.</p>
+<ul>
+<li>
+<p><code>Skybox Front (North)</code> -&gt; "panorama_0.png"</p>
+</li>
+<li>
+<p><code>Skybox Right</code> -&gt; "panorama_1.png"</p>
+</li>
+<li>
+<p><code>Skybox Back</code> -&gt; "panorama_2.png"</p>
+</li>
+<li>
+<p><code>Skybox Left</code> -&gt; "panorama_3.png"</p>
+</li>
+<li>
+<p><code>Skybox Up</code> -&gt; "panorama_4.png"</p>
+</li>
+<li>
+<p><code>Skybox Down</code> -&gt; "panorama_5.png"</p>
+</li>
+</ul>
+<h2 id="step-4-create-a-resource-pack">Step 4: Create a resource pack<a class="headerlink" href="#step-4-create-a-resource-pack" title="Permanent link">#</a></h2>
+<p>Create a new directory somewhere on your computer. Inside, create a file called "pack.mcmeta". Write the following text to the file, editing the description as you desire. See <a href="https://minecraft.fandom.com/wiki/Pack_format" target="_blank">this Minecraft Wiki page</a> for a list of pack formats. Write the appropriate pack format for the version of Minecraft on which you wish to use the pack.</p>
+<pre><code class="language-json">{
+    &quot;pack&quot;: {
+        &quot;pack_format&quot;: 13,
+        &quot;description&quot;: &quot;Write the resource pack description here.&quot;
+    }
+}
+</code></pre>
+<p>Next to "pack.mcmeta", create the directories, "assets/minecraft/textures/gui/title/background". Copy the six panorama files into the "background" directory.</p>
+<p>Add the files within the resource pack root directory to a ZIP archive. The "pack.mcmeta" should be in the root of the ZIP archive.</p>
+<h2 id="step-5-use-the-resource-pack">Step 5: Use the resource pack<a class="headerlink" href="#step-5-use-the-resource-pack" title="Permanent link">#</a></h2>
+<p>Move the ZIP archive to the "resourcepacks" directory of your ".minecraft" directory. In Minecraft, select the resource pack to be loaded. If everything is successful, the title screen panorama should now be your Chunky render.</p>
+<hr />
+<p>I highly recommend installing the <a href="https://modrinth.com/mod/panorama-tweaker" target=_blank">Panorama Tweaker</a> mod for Fabric. By default, the panorama view is aimed slightly downward, preventing some of the panorama from being seen. This mod allows for extensive customization of the panorama view.</p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="generator" content="mkdocs-1.4.3, mkdocs-terminal-4.4.0">
+     
+     
+    
+    <link rel="canonical" href="https://peregrine05.github.io/guides/chunky/basics/"><link rel="icon" type="image/png" sizes="192x192" href="../../img/android-chrome-192x192.png" />
+<link rel="icon" type="image/png" sizes="512x512" href="../../img/android-chrome-512x512.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="../../img/apple-touch-icon.png" />
+<link rel="shortcut icon" type="image/png" sizes="48x48" href="../../img/favicon.ico" />
+<link rel="icon" type="image/png" sizes="16x16" href="../../img/favicon-16x16.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="../../img/favicon-32x32.png" />
+
+
+    
+ 
+<title>Chunky Basics - Guides</title>
+
+
+<link href="../../css/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="../../css/fontawesome/css/solid.min.css" rel="stylesheet">
+<link href="../../css/normalize.css" rel="stylesheet">
+<link href="../../css/terminal.css" rel="stylesheet">
+<link href="../../css/theme.css" rel="stylesheet">
+<link href="../../css/theme.tile_grid.css" rel="stylesheet">
+<link href="../../css/theme.footer.css" rel="stylesheet">
+<!-- default color palette -->
+<link href="../../css/palettes/default.css" rel="stylesheet">
+
+<!-- page layout -->
+<style>
+/* initially set page layout to a one column grid */
+.terminal-mkdocs-main-grid {
+    display: grid;
+    grid-column-gap: 1.4em;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/*  
+*   when side navigation is not hidden, use a two column grid.  
+*   if the screen is too narrow, fall back to the initial one column grid layout.
+*   in this case the main content will be placed under the navigation panel. 
+*/
+@media only screen and (min-width: 70em) {
+    .terminal-mkdocs-main-grid {
+        grid-template-columns: 4fr 9fr;
+    }
+}</style>
+
+
+
+     
+    
+    
+
+    
+    <!-- search css support -->
+<link href="../../css/search/bootstrap-modal.css" rel="stylesheet">
+<!-- search scripts -->
+<script>
+    var base_url = "../..",
+    shortcuts = "{}";
+</script>
+<script src="../../js/jquery/jquery-1.10.1.min.js" defer></script>
+<script src="../../js/bootstrap/bootstrap.min.js" defer></script>
+<script src="../../js/mkdocs/base.js" defer></script>
+    
+    
+    
+    
+    <script src="../../search/main.js"></script>
+    
+
+    
+</head>
+
+<body class="terminal"><div class="container">
+    <div class="terminal-nav">
+        <header class="terminal-logo">
+            <div id="mkdocs-terminal-site-name" class="logo terminal-prompt"><a href="https://peregrine05.github.io/guides/" class="no-style">Guides</a></div>
+        </header>
+        
+        <nav class="terminal-menu">
+            
+            <ul vocab="https://schema.org/" typeof="BreadcrumbList">
+                
+                
+                <li property="itemListElement" typeof="ListItem">
+                    <a href="../.." class="menu-item " property="item" typeof="WebPage">
+                        <span property="name">Index</span>
+                    </a>
+                    <meta property="position" content="0">
+                </li>
+                
+                
+                
+                    
+                    
+
+
+<li property="itemListElement" typeof="ListItem">
+    <a href="#" class="menu-item" data-toggle="modal" data-target="#mkdocs_search_modal" property="item" typeof="SearchAction">
+        <i aria-hidden="true" class="fa fa-search"></i> <span property="name">Search</span>
+    </a>
+    <meta property="position" content="1">
+</li>
+                    
+            </ul>
+            
+        </nav>
+    </div>
+</div>
+        
+    <div class="container">
+        <div class="terminal-mkdocs-main-grid"><aside id="terminal-mkdocs-side-panel"><nav>
+  
+    <ul class="terminal-mkdocs-side-nav-items">
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item" href="../.."></a>
+    
+    
+    
+  </li>
+        
+          
+
+
+
+<li class="terminal-mkdocs-side-nav-li">
+    
+    
+        
+        
+            
+            
+                
+                
+        
+
+             
+            
+    
+        
+        <a class="
+
+    terminal-mkdocs-side-nav-item--active" href="../">Chunky</a>
+    
+    
+        
+      
+        
+            <ul class="terminal-mkdocs-side-nav-li-ul">
+        
+            
+            
+                
+                
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        <span class="
+
+    terminal-mkdocs-side-nav-item--active">Chunky Basics</span>
+    
+    </li>
+            
+        
+            
+            
+                
+                
+            
+
+             
+                <li class="terminal-mkdocs-side-nav-li-ul-li">
+    
+        
+        
+            <a class="
+
+    terminal-mkdocs-side-nav-item" href="../title_panorama/">Rendering a Minecraft Title Screen Panorama</a>
+        
+    
+    </li>
+            
+            
+    </ul>
+        
+    
+  </li>
+        
+    </ul>
+  
+</nav><hr>
+<nav>
+    <ul>
+        <li><a href="#chunky-basics">Chunky Basics</a></li>
+        <li><a href="#install-chunky">Install Chunky</a></li><li><a href="#configure-the-launcher">Configure the Launcher</a></li><li><a href="#load-resource-packs">Load Resource Packs</a></li><li><a href="#load-a-world">Load a World</a></li><li><a href="#select-chunks">Select Chunks</a></li><li><a href="#load-selected-chunks">Load Selected Chunks</a></li><li><a href="#scene-setup">Scene Setup</a></li><li><a href="#render">Render</a></li><li><a href="#advanced">Advanced</a></li>
+    </ul>
+</nav>
+</aside>
+            <main id="terminal-mkdocs-main-content">
+<section id="mkdocs-terminal-content">
+    <h1 id="chunky-basics">Chunky Basics<a class="headerlink" href="#chunky-basics" title="Permanent link">#</a></h1>
+<p>Chunky is a free and open-source application that can generate realistic-looking images of your Minecraft worlds with path tracing.</p>
+<hr />
+<p>One thing to note is that if the selection of the world to be rendered is very large, and you do not have much RAM available, then you may want to consider using <a href="https://www.avoyd.com/" target="_blank">Avoyd</a>, which can load very large worlds much more quickly than Chunky can, and in much less memory than Chunky can, at the sacrifice of block models and textures, the loss of which would likely be unnoticeable at great distances.</p>
+<p>Another thing to note is that many controls in Chunky are not limited by the range of the slider. Values beyond the range of the slider can often be entered into the associated input field. Also, many controls are equipped with a tooltip that becomes visible when the cursor is hovered over the control.</p>
+<p>This guide covers only the basics; see the <a href="https://chunky-dev.github.io/docs/" target="_blank">Chunky Manual</a> for a full reference.</p>
+<hr />
+<h2 id="install-chunky">Install Chunky<a class="headerlink" href="#install-chunky" title="Permanent link">#</a></h2>
+<p>Follow the instructions on the installation page of the Chunky Manual, which is located <a href="https://chunky-dev.github.io/docs/getting_started/installing_chunky/" target="_blank">here</a>.</p>
+<h2 id="configure-the-launcher">Configure the Launcher<a class="headerlink" href="#configure-the-launcher" title="Permanent link">#</a></h2>
+<p>If this is a fresh installation of Chunky, then no versions of Chunky will be installed. Click <code>Check for update</code> to download the newest stable release of Chunky if the Launcher does not prompt you to download it automatically. If the update check succeeds, then you should be presented with the newest available stable release, which is <em>2.4.4</em> at the time of this writing.</p>
+<p>The <code>Memory limit (MiB)</code> control configures the amount of memory that is allocated to Chunky, measured in mebibytes (MiB), or <em>megabytes</em>, as is more commonly said. By default, it is set to <em>1024</em>, so you can increase this based on the amount of free memory available on your system. Depending on your operating system, leave 2 to 4 gibibytes (gigabytes) free for your operating system, and more if you intend to use other applications while Chunky is running. If you are running Chunky on a system with 16 GiB of RAM and Windows 10 or Windows 11, then allocating up to 12 GiB (12 288 MiB) is safe.</p>
+<p>If you run Minecraft in a non-default Minecraft directory, then set the <code>Minecraft directory</code> to the Minecraft directory that you use. Custom Minecraft launchers that use a different directory structure require some more work to allow Chunky to load your Minecraft files properly. If you use one, then leave the <code>Minecraft directory</code> setting alone. This issue will be returned to later.</p>
+<p>Finally, click <code>Launch</code> to launch Chunky.</p>
+<h2 id="load-resource-packs">Load Resource Packs<a class="headerlink" href="#load-resource-packs" title="Permanent link">#</a></h2>
+<p>To load a resource pack, click <code>Edit resource packs</code>, which is located in the <code>Options</code> tab on the right-side control panel. In the 'Resource Packs' dialog box that opens, click <code>Add</code>, and then browse for a ZIP file, a JAR file, or a "pack.mcmeta" to load as a resource pack. Chunky does not support resource packs that use custom block models.</p>
+<p>This step is required if you use a custom Minecraft launcher. Browse for the Minecraft "version.jar" that contains the Minecraft textures that you wish to use before loading any other resource packs.</p>
+<p>Note that textures in resource packs that are higher in the list will override textures in resource packs that are lower in the list, in the same manner as Minecraft.</p>
+<h2 id="load-a-world">Load a World<a class="headerlink" href="#load-a-world" title="Permanent link">#</a></h2>
+<p>In the <code>Map view</code> tab on the right-side control panel, click <code>Change World</code>. You should see a list of worlds that Chunky detected in your Minecraft "saves" directory. If the list is blank, and you use a custom Minecraft launcher, then click <code>Change world directory</code>. Browse for the "saves" directory that the custom launcher uses to store the worlds. Select the world that you want to render from the list and then click <code>Load selected world</code>.</p>
+<h2 id="select-chunks">Select Chunks<a class="headerlink" href="#select-chunks" title="Permanent link">#</a></h2>
+<p>The <code>Map</code> tab in the center panel displays an interactive map of the Minecraft world that is loaded. Chunk selections are made from this panel. Selected chunks are highlighted in red. Clicking a chunk selects or deselects it, depending on its current state of selection. Hold [Shift] and left-click and drag on the map view to create a rectangular selection of chunks. Hold [Ctrl] + [Shift] and left-click and drag to create a rectangular "de-selection" of chunks. To clear the chunk selection, right-click on the map and then click <code>Clear selection</code>.</p>
+<p>It should be noted that Chunky's default <code>PACKED</code> octree implementation has a size limit of about 400 000 chunks on most worlds. If you must load more chunks while keeping memory usage low, then you should install the <a href="https://chunky-dev.github.io/docs/plugins/plugin_list/#octree-plugin" target="_blank">Octree plugin</a> according to the <a href="https://chunky-dev.github.io/docs/plugins/chunky_plugins/" target="_blank">plugin installation instructions</a> and use one of the implementations that it provides; <code>DICTIONARY</code> and <code>DAG_TREE</code> specifically are good for reducing memory usage.</p>
+<h2 id="load-selected-chunks">Load Selected Chunks<a class="headerlink" href="#load-selected-chunks" title="Permanent link">#</a></h2>
+<p>Open the <code>Scene</code> tab on the left-side control panel. You may make changes to what entities are loaded into the scene with the <code>Load entities</code> control. If the world height and depth limits of your world are greater than the default height and depth limits, or you wish to render a smaller vertical slice of your world, then change the <code>Y min clip</code> and <code>Y max clip</code> to define the lower and upper limits, respectively, of the selection that you wish to render. Once that is done, click <code>Load selected chunks</code>.</p>
+<h2 id="scene-setup">Scene Setup<a class="headerlink" href="#scene-setup" title="Permanent link">#</a></h2>
+<p>Once the chunk loading process is complete, Chunky will automatically switch to the <code>Render preview</code> tab, where a preview of the selected chunks will be generated.</p>
+<p>It should be noted that because Chunky is CPU-driven, generating a preview for larger canvas resolutions may require much time, and may make setting up the scene more difficult. In most cases, a small canvas size should be used during scene setup, and a larger one only used for the final render. In the <code>Scene</code> tab, set the <code>Canvas size</code> to a lower resolution, such as <em>400x400</em>, if it is not already set, and then press [Enter]. It is possible and recommended to test-render your scene while setting it up, to get an idea of the final result. This can be done by pressing <code>Start</code> and allowing it to render for a short time. These test renders will also benefit from a smaller canvas, as less time is required to path-trace a sample of a smaller canvas.</p>
+<h3 id="camera-setup">Camera Setup<a class="headerlink" href="#camera-setup" title="Permanent link">#</a></h3>
+<p>The camera movement controls are similar to the player movement controls in Minecraft. Use the [W], [A], [S], and [D] keys to move the camera one meter (one block) forward, left, back, and right, respectively. Use the [R] and [F] keys to move the camera one meter up and down, respectively. Use one of the movement keys while holding [Shift], [Ctrl], or [Ctrl] + [Shift] to multiply the camera movement by <em>0.1</em>, <em>100</em>, or <em>10</em>, respectively. Left-click and drag the preview to rotate the camera in the direction the cursor is dragged. Scroll the mouse wheel to zoom the camera.</p>
+<p>The <code>Camera</code> tab in the left-side control panel contains controls for manipulating the camera. Of particular interest here may be the <code>Projection mode</code> control. <code>Parallel</code> projection is ideal for taking overhead shots of the scene. See <a href="https://chunky-dev.github.io/docs/reference/user_interface/chunky/render_controls/camera/#figure-3" target="_blank">this page</a> of the manual for example renders of different camera projections. The <code>Depth of field</code> and <code>Subject distance</code> controls change the focus of the camera. To autofocus on a point in the scene, right-click on that point in the render preview and then click <code>Set target</code>. Then click <code>Autofocus</code> in the <code>Camera</code> tab.</p>
+<h3 id="lighting-setup">Lighting Setup<a class="headerlink" href="#lighting-setup" title="Permanent link">#</a></h3>
+<p>The <code>Lighting</code> tab in the left-side control panel contains controls for manipulating the lighting in the scene. Adjust the controls to your liking. The control names should be self-explanatory. There are several things to note, though: (a) the <code>Sky light</code> control only changes the amount of light that the scene receives from the sky; it does not change the apparent brightness of the sky; (b) emitters are blocks that are set to emit light; these can be enabled with the <code>Enable emitters</code> control (Note that emitters can greatly increase the amount of time required to eliminate noise in the render); (c) the <code>Emitter Sampling Strategy</code> control changes how emitters (blocks that are set to emit light) are sampled in an attempt to reduce noise, if emitters are enabled. See <a href="https://chunky-dev.github.io/docs/user_guides/introduction/next_event_estimation/#emitter-sampling-strategy-ess" target="_blank">this page</a> of the manual for details about ESS and example renders; (d) the <code>Enable sunlight</code> control causes a noteworthy performance drop when enabled, so it should be disabled in scenes that do not receive sunlight; (e) the <code>Draw sun</code> control changes whether the sun texture is drawn in the sky; it has no effect on the sunlight itself; (f) when <code>Sun azimuth</code> is <em>0</em>, the sun is due East; and (g) the <code>Sun color</code> control only changes the color of the sunlight; the color of the sun texture itself is determined by the resource pack that is in use.</p>
+<h3 id="sky-and-fog-setup">Sky and Fog Setup<a class="headerlink" href="#sky-and-fog-setup" title="Permanent link">#</a></h3>
+<p>The <code>Sky &amp; Fog</code> tab in the left-side control panel contains controls for manipulating the sky and fog in the scene. Use the <code>Sky mode</code> control to select the type of sky to use in your scene. <code>Skymap (panoramic)</code>, <code>Skymap (spherical)</code>, and <code>Skybox</code> allow you to use different types of skymaps as the sky in the scene. See <a href="https://chunky-dev.github.io/docs/user_guides/skymaps/" target="_blank">this page</a> of the manual for information about the different types of skymap formats. Enabling <code>Transparent sky</code> will render the sky as transparent and allow you to layer a separate image behind the render to be used as the sky. The <code>Enable clouds</code> control will add Minecraft-style clouds to the scene. The shape of the clouds is determined by the loaded resource pack. The size and position of the clouds can be changed with the other cloud controls. Set <code>Fog density</code> to a value greater than <em>0</em> to enable rendering of simulated fog in the scene. The <code>Sky fog blending</code> control changes how much the fog color is blended with the sky. The blending is performed only when fog is enabled.</p>
+<h3 id="water-setup">Water Setup<a class="headerlink" href="#water-setup" title="Permanent link">#</a></h3>
+<p>The <code>Water</code> tab in the left-side control panel contains controls for manipulating the water in the scene. By default, the water in Chunky has a normal map applied; this can be disabled by enabling <code>Still water</code>. The <code>Water visibility</code> control changes the distance at which light traveling through water is absorbed. The <code>Water opacity</code> control changes the opacity of the surface of the water. By default, the color of water is taken from the biome that the water is in, but it can be changed to a custom water color with the <code>Use custom water color</code> control. The <code>Water world mode</code> control adds an infinite ocean around the scene. The ocean can be allowed to extend into the scene by disabling <code>Hide the water plane in loaded chunks</code>.</p>
+<h3 id="entities-setup">Entities Setup<a class="headerlink" href="#entities-setup" title="Permanent link">#</a></h3>
+<p>The <code>Entities</code> tab contains controls for manipulating entities in the scene. Here you can see a list of entities that Chunky loaded when <code>Load selected chunks</code> was used. Select an entity in the list to expose controls for manipulating its position and orientation. Use the <code>+</code> control to add players to the scene at the location of the current preview target, if any, or at the location of the camera. Use the <code>-</code> control to remove the selected entity from the scene.</p>
+<h3 id="materials-setup">Materials Setup<a class="headerlink" href="#materials-setup" title="Permanent link">#</a></h3>
+<p>The <code>Materials</code> tab contains controls for manipulating material properties of different blocks in the scene. Select any material in the list to change its properties. See <a href="https://chunky-dev.github.io/docs/user_guides/introduction/material_properties/" target="_blank">this page</a> of the manual for information about the different material properties and their effects. In summary, <code>Emittance</code> changes the intensity of the light emitted by the material; <code>Specular</code> changes how mirror-like the material behaves; and <code>IoR</code> determines how light refracts when it intersects the material. <code>Metalness</code> behaves identically to <code>Specular</code>, but reflected light is tinted according to the texture of the material. <code>Smoothness</code> is self-explanatory. Its effects are visible only in specular reflections.</p>
+<h3 id="postprocessing-setup">Postprocessing Setup<a class="headerlink" href="#postprocessing-setup" title="Permanent link">#</a></h3>
+<p>The <code>Postprocessing</code> tab contains controls for adjusting the final appearance of the image. The <code>Exposure</code> control changes the overall brightness of the image, and the <code>Postprocessing filter</code> control changes the tone mapping filter applied to the image.</p>
+<h3 id="advanced-setup">Advanced Setup<a class="headerlink" href="#advanced-setup" title="Permanent link">#</a></h3>
+<p>In most cases, you should not need to adjust the controls in the <code>Advanced</code> tab in the left-side control panel. If you intend to use your computer while Chunky is rendering, you should reduce the values of <code>Render threads</code> and <code>CPU utilization</code>, which control how much CPU power used is for rendering. Another control worth mentioning is <code>Ray depth</code>, which controls the maximum number of times a ray can bounce through the scene before being terminated. A value of 3 to 8 is typically enough for most scenes. Increasing the ray depth improves lighting accuracy, especially if the scene contains many refractive or reflective materials, at the cost of performance.</p>
+<h2 id="render">Render<a class="headerlink" href="#render" title="Permanent link">#</a></h2>
+<p>Once the scene has been set up to your liking, return to the <code>Scene</code> tab and set the <code>Canvas size</code> to a higher resolution, such as <em>1920x1080</em>. At the top-left of the window, set the name of the scene in the <code>Scene</code> input field, and then click the <code>Save</code> button, which uses a disk graphic. Finally, in the bottom-left of the window, set the <code>Target SPP</code> to a reasonable value for the scene. The <code>Target SPP</code> has a direct effect on render time. The greater the value of the <code>Target SPP</code>, the more time the render will require to be complete, but the less noise will be in the render. For purely daylight renders, a <code>Target SPP</code> value between 32 and 1 024 is often enough. For daylight renders with emitters, a value between 4 096 and 16 384 is better. For scenes lit only by emitters, 16 384 SPP or greater is often required to reduce noise to an acceptable level.</p>
+<p>To render the scene, click the <code>Start</code> button in the bottom-left of the window. Chunky will autosave the scene on the interval defined by the <code>Save snapshot once every X frames</code> control in the <code>Scene</code> tab, and will save a snapshot if <code>Save snapshot for each dump</code> is enabled. If at any point you must stop the render to continue later, then first click <code>Pause</code>, wait for the current sample to finish rendering, and then click the <code>Save</code> button. Once saving has completed, it is safe to close Chunky without losing any render progress. The scene along with its render progress can then be loaded at any time and the render continued. Once Chunky renders the scene to the <code>Target SPP</code>, it will save the scene and save a snapshot to the "snapshots" directory of the directory of your scene, which can be accessed by clicking <code>Open scene directory</code> in the <code>Scene</code> tab. If you must render further, click <code>Pause</code>, increase the <code>Target SPP</code>, and then click <code>Start</code>.</p>
+<h2 id="advanced">Advanced<a class="headerlink" href="#advanced" title="Permanent link">#</a></h2>
+<p>This section covers more advanced usage of Chunky.</p>
+<h3 id="downloading-snapshots">Downloading Snapshots<a class="headerlink" href="#downloading-snapshots" title="Permanent link">#</a></h3>
+<p>Snapshot builds of Chunky are built from the master branch. They contain the latest additions and bug fixes, but potentially the most new bugs. To download and use a snapshot build, open the Launcher, and set the <code>Release channel</code> in the <code>Advanced Settings</code> panel to <code>Snapshot</code>. Then click <code>Check for update</code>. Install the snapshot build and then click <code>Launch</code>.</p>
+<p>In addition to snapshot builds, there are stable snapshot builds of Chunky, which are built from the 2.4.x branch. They contain only bug fixes and minor additions and are considered stable enough for general use. To download and use a stable snapshot build, set the <code>Release channel</code> to <code>Stable snapshot</code> and then click <code>Check for update</code>. Install the stable snapshot build and then click <code>Launch</code>.</p>
+<h3 id="downloading-pull-request-builds">Downloading Pull Request Builds<a class="headerlink" href="#downloading-pull-request-builds" title="Permanent link">#</a></h3>
+<p>Pull Request builds are built from development branches of Chunky. These branches may contain new features or bug fixes, as well as buggy or unfinished work. To download and use a pull request build, first set the <code>Update Site</code> to <code>https://chunky-pr.lemaik.de</code>. Then click <code>Reload</code>, which is next to the <code>Release channel</code> control. Set the <code>Release channel</code> to the pull request of which you want to download a build, and then click <code>Check for update</code>. The update check may fail for one of a few reasons, but if it succeeds, install the build and then click <code>Launch</code>.</p>
+</section>
+
+            </main>
+        </div>
+        <hr><footer>
+    <div class="terminal-mkdocs-footer-grid">
+        <div id="terminal-mkdocs-footer-copyright-info">
+             Site built with <a href="http://www.mkdocs.org">MkDocs</a> and <a href="https://github.com/ntno/mkdocs-terminal">Terminal for MkDocs</a>.
+        </div>
+    </div>
+</footer>
+    </div>
+
+    
+    <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="alertdialog" aria-modal="true" aria-labelledby="searchModalLabel">
+    <div class="modal-dialog modal-lg" role="search">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="searchModalLabel">Search</h5>
+                <button type="button" class="close btn btn-default btn-ghost" data-dismiss="modal"><span aria-hidden="true">x</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p id="searchInputLabel">Type to start searching</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" aria-labelledby="searchInputLabel" placeholder="" id="mkdocs-search-query" title="Please enter search terms here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No document matches found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</body>
+
+</html>

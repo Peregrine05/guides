@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://peregrine05.github.io/guides/</loc>
+         <lastmod>2023-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://peregrine05.github.io/guides/chunky/</loc>
+         <lastmod>2023-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://peregrine05.github.io/guides/chunky/basics/</loc>
+         <lastmod>2023-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://peregrine05.github.io/guides/chunky/title_panorama/</loc>
+         <lastmod>2023-06-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
